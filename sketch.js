@@ -6,7 +6,16 @@ function setup() {
   background(200);
 
 
-console.log("initial array is " + boba);
+console.log("initial array is ")
+console.log(boba);
+
+boba.pop();
+console.log("array after pop")
+console.log(boba);
+
+boba.push("tapEx");
+console.log("array after push")
+console.log(boba);
 
 
 
