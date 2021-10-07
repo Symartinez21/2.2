@@ -1,28 +1,34 @@
 //where do I want to go get boba
-let boba = ["7leaves", "bobaholics", "happyLemon", "tenRen", "85c"];
+let boba = [{
+  name: "7leaves",
+  sugar: "medium"
+}, {
+  name: "tenRen",
+  sugar: "low"
+}, {
+  name: "85c",
+  sugar: "high"
+}, {
+  name: "happyLemon",
+  sugar: "high"
+}, {
+  name: "truedan",
+  sugar: "low"
+}, {
+  name: "TPtea",
+  sugar: "medium"
+}];
 
 function setup() {
   createCanvas(600, 600);
   background(200);
 
-
-console.log("initial array is ")
-console.log(boba);
-
-boba.pop();
-console.log("array after pop")
-console.log(boba);
-
-boba.push("tapEx");
-console.log("array after push")
-console.log(boba);
-
-
+  console.log(boba[int(random(boba.length))]);
 
 
 }
 
-function draw(){
+function draw() {
 
 
 }
