@@ -19,16 +19,21 @@ let boba = [{
   sugar: "medium"
 }];
 
+let randomIndex;
+
 function setup() {
   createCanvas(600, 600);
   background(200);
-
-  console.log(boba[int(random(boba.length))]);
-
 
 }
 
 function draw() {
 
+}
 
+function mousePressed(){
+  background(random(200, 255));
+  randomIndex = int(random(boba.length));
+  text(boba[randomIndex].name, 50, 50);
+  boba.splice(randomIndex, 1)
 }
